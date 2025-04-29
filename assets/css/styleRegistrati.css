@@ -1,0 +1,209 @@
+/*import fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+/*font --> Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /*font*/
+  --font-title: "Space Grotesk", sans-serif;
+  --font-text: "Poppins", sans-serif;
+
+  /*colori*/
+  --seasalt: #f8f9faff;
+  --antiflash-white: #e9ecefff;
+  --platinum: #dee2e6ff;
+  --french-gray: #ced4daff;
+  --french-gray-2: #adb5bdff;
+  --slate-gray: #6c757dff;
+  --outer-space: #495057ff;
+  --onyx: #343a40ff;
+  --eerie-black: #212529ff;
+
+  /*misure*/
+  --size-title: 21px;
+  --size-text: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: var(--eerie-black);
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/realisticShopping.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+}
+
+* {
+  font-family: var(--font-text);
+}
+
+#contenitore_generale {
+  background-color: #fefefefe;
+  width: 70rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  padding: 2rem;
+  border: 1px solid var(--french-gray);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+#contenitore_generale #sx {
+  width: 40rem;
+}
+#sx label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+#sx label input {
+  padding: 0.4rem;
+  font-size: 11px;
+  border: 1px solid var(--outer-space);
+  border-radius: 4px;
+}
+#sx #titolo {
+  font-size: 40px;
+  font-family: var(--font-title);
+  display: block;
+}
+#sx #testo {
+  display: block;
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+#box-psw {
+  display: flex;
+  flex-direction: row;
+}
+#box-psw #psw {
+  width: calc(100% - 10%);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#box-psw button {
+  width: 10%;
+  background-color: rgb(77, 204, 77);
+  border: 1px solid var(--outer-space);
+  border-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-left: 0px;
+  color: #fefefefe;
+}
+/*situazione iniziale*/
+#box-psw button #aperto {
+  display: none;
+}
+/*comportamento*/
+#sx label input:focus {
+  outline: none;
+  border: 1px solid rgb(77, 204, 77);
+  transition: 0.5s;
+}
+/*bottone registrati*/
+#sx #login {
+  padding: 0.4rem;
+  background-color: rgb(77, 204, 77);
+  color: var(--seasalt);
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 1rem;
+}
+/*comportamento bottone*/
+#sx #login:hover,
+#eye:hover {
+  cursor: pointer;
+  background-color: rgb(85, 217, 85);
+}
+#dx {
+  width: 30rem;
+}
+#dx #intestazione {
+  font-size: 31px;
+  font-family: var(--font-title);
+  margin-left: 2rem;
+}
+#dx #motive {
+  list-style: none;
+}
+#motive .icona {
+  padding: 1rem;
+  background-color: rgb(77, 204, 77);
+  clip-path: circle(40%);
+  color: #fefefefe;
+}
+#motive li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+/*gestione media queries*/
+@media screen and (max-width: 1300px) {
+  /*modifiche*/
+  #contenitore_generale {
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  body::before {
+    background-position: -35rem;
+  }
+  #contenitore_generale {
+    width: 70%;
+    display: block;
+    text-align: center;
+  }
+  #contenitore_generale #dx {
+    display: none;
+  }
+  #contenitore_generale #sx {
+    position: relative;
+    width: 100%;
+  }
+  #sx #titolo {
+    position: relative;
+    width: 100%;
+  }
+  #sx #testo {
+    position: relative;
+    width: 100%;
+  }
+  #sx #inserimento {
+    width: 100%;
+  }
+  #sx label {
+    text-align: left;
+  }
+}
+#error-message {
+  font-size: 12px;
+  margin-top: 0.5rem;
+  color: rgb(209, 13, 13);
+  display: none;
+}
+#error-message {
+  transition: all 1s ease-in;
+}

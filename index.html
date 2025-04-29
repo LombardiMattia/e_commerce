@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CDNJS, API JS FONTAWERSOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!--FAVICON REFERENCE-->
+    <link rel="icon" href="images/right-to-bracket-solid.svg" />
+
+    <!--FOGLIO DI STILE, CSS-->
+    <link rel="stylesheet" href="assets/css/styleIndex.css" />
+
+    <!--SCRIPT JS DI FRONTEND-->
+    <script src="assets/js/gestioneScriptIndex.js" defer></script>
+    <!--SCRIPT JS DI BACKEND-->
+
+    <title>ERCE - LOGIN</title>
+  </head>
+  <body>
+    <div id="contenitore_generale">
+      <div id="sx" class="spalla">
+        <span id="titolo">Scorri, Scegli, Compra</span>
+        <span id="testo"
+          >Visualizza tutti i prodotti presenti nel nostro store, scegli il
+          prezzo migliore e dai vita ai tuoi sogni.</span
+        >
+
+        <form id="inserimento">
+          <input
+            class="credenziali"
+            id="email"
+            placeholder="Inserisci la tua e-mail"
+            type="text"
+          />
+          <div id="password">
+            <input
+              class="credenziali"
+              id="psw"
+              placeholder="Inserisci la tua password"
+              type="password"
+            />
+            <button type="button" id="eye" onclick="gestionePassword()">
+              <!--OCCHIO APERTO-->
+              <span id="aperto">
+                <i class="fa-regular fa-eye"></i>
+              </span>
+
+              <!--OCCHIO CHIUSO-->
+              <span id="chiuso">
+                <i class="fa-regular fa-eye-slash"></i>
+              </span>
+            </button>
+          </div>
+
+          <button id="login" class="credenziali" type="button" onclick="log()">
+            Accedi
+          </button>
+          <span id="fondo"
+            >Non hai ancora un account?
+            <a href="pages/registrati.html" target="_self">Registrati</a>.</span
+          >
+        </form>
+        <div id="error-message"></div>
+      </div>
+
+      <div id="dx" class="spalla"></div>
+    </div>
+  </body>
+</html>

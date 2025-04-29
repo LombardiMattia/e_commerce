@@ -1,0 +1,121 @@
+/*import dell'interfaccia index*/
+@import url("styleShop.css");
+
+/*contenitore generico*/
+#contenitore_generale {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  padding: 10rem;
+}
+#testo {
+  height: 30rem;
+  position: absolute;
+  font-size: 31px;
+  font-family: var(--font-text);
+  top: -20rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../../images/empty.jpg");
+  background-repeat: no-repeat;
+  background-size: 40rem;
+  background-position: center;
+  text-align: center;
+}
+
+/*box prodotti*/
+.box-prodotto {
+  position: relative;
+  width: 90%;
+  background-color: #fefefe;
+  border: 1px solid var(--platinum);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  font-family: var(--font-text);
+  gap: 0.8rem;
+}
+.box-prodotto #superiore {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+.box-prodotto #superiore img {
+  width: 13rem;
+  border-radius: 6px;
+}
+.box-prodotto #superiore .box-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.box-info #title {
+  font-family: var(--font-title);
+  font-size: 21px;
+  font-weight: 600;
+}
+.box-info #marca {
+  font-weight: 600;
+  color: rgb(54, 54, 54);
+}
+.box-info #costo {
+  color: rgb(26, 171, 1);
+  font-weight: 600;
+}
+.box-prodotto #inferiore {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#inferiore button {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(181, 0, 0, 0.546);
+  font-family: var(--font-text);
+  border-radius: 4px;
+  width: 8rem;
+}
+#inferiore button:hover {
+  cursor: pointer;
+  background-color: rgba(238, 2, 2, 0.799);
+  color: rgb(255, 255, 255);
+}
+
+/*bottoni finali*/
+.bottoni-finali {
+  width: 92%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+}
+.bottoni-finali button {
+  padding: 0.8rem;
+  background-color: transparent;
+  border: 1px solid var(--platinum);
+  font-family: var(--font-text);
+  border-radius: 4px;
+}
+.bottoni-finali button:hover {
+  cursor: pointer;
+  background-color: var(--seasalt);
+}
+.bottoni-finali #pulisci-carrello {
+  border-color: rgba(181, 0, 0, 0.546);
+}
+#pulisci-carrello:hover {
+  background-color: rgba(238, 2, 2, 0.799);
+  color: var(--seasalt);
+}

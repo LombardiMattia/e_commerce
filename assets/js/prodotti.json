@@ -1,0 +1,162 @@
+[
+  {
+    "nome": "Zaino Urban Explorer",
+    "marca": "NorthPeak",
+    "immagine": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f",
+    "costo": 49.99,
+    "descrizione": "Zaino resistente e versatile, ideale per la citt\u00e0 e le escursioni.",
+    "id": 0
+  },
+  {
+    "nome": "Cuffie Bluetooth",
+    "marca": "SoundWave",
+    "immagine": "https://images.unsplash.com/photo-1628202926206-c63a34b1618f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 89.9,
+    "descrizione": "Cuffie wireless con cancellazione attiva del rumore e audio cristallino.",
+    "id": 1
+  },
+  {
+    "nome": "Tazza in Ceramica Minimal",
+    "marca": "MugLife",
+    "immagine": "https://images.unsplash.com/photo-1616241673111-508b4662c707?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 12.5,
+    "descrizione": "Tazza in ceramica bianca con design minimal per le tue bevande preferite.",
+    "id": 2
+  },
+  {
+    "nome": "Lampada da Tavolo LED",
+    "marca": "Lumos",
+    "immagine": "https://images.unsplash.com/photo-1580130281320-0ef0754f2bf7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 34.99,
+    "descrizione": "Lampada a LED moderna, perfetta per la scrivania o il comodino.",
+    "id": 3
+  },
+  {
+    "nome": "Sneakers Running Pro",
+    "marca": "RunX",
+    "immagine": "https://images.unsplash.com/photo-1465453869711-7e174808ace9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 79.95,
+    "descrizione": "Scarpe da corsa leggere e traspiranti per prestazioni elevate.",
+    "id": 4
+  },
+  {
+    "nome": "Smartwatch Fitness Tracker",
+    "marca": "PulseTech",
+    "immagine": "https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 129.99,
+    "descrizione": "Orologio intelligente con monitoraggio dell'attivit\u00e0 e battito cardiaco.",
+    "id": 5
+  },
+  {
+    "nome": "Occhiali da Sole Vintage",
+    "marca": "RetroView",
+    "immagine": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 39.0,
+    "descrizione": "Occhiali da sole con montatura retr\u00f2 per uno stile intramontabile.",
+    "id": 6
+  },
+  {
+    "nome": "Borsa in Pelle Artigianale",
+    "marca": "Leathora",
+    "immagine": "https://images.unsplash.com/photo-1624687943971-e86af76d57de?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 110.0,
+    "descrizione": "Borsa elegante in pelle vera, fatta a mano da artigiani esperti.",
+    "id": 7
+  },
+  {
+    "nome": "Notebook Ultra Slim",
+    "marca": "TechZen",
+    "immagine": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+    "costo": 999.99,
+    "descrizione": "Laptop potente e leggero con display ad alta risoluzione.",
+    "id": 8
+  },
+  {
+    "nome": "Fotocamera Mirrorless 4K",
+    "marca": "PhotoLine",
+    "immagine": "https://images.unsplash.com/photo-1536632087471-3cf3f2986328?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 799.0,
+    "descrizione": "Fotocamera compatta con sensore di alta qualit\u00e0 e video in 4K.",
+    "id": 9
+  },
+  {
+    "nome": "Cuffie Wireless Over-Ear",
+    "marca": "BeatBox",
+    "immagine": "https://images.unsplash.com/photo-1505236273191-1dce886b01e9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 149.5,
+    "descrizione": "Cuffie comode con suono potente e autonomia prolungata.",
+    "id": 10
+  },
+  {
+    "nome": "Zaino da Viaggio Impermeabile",
+    "marca": "HikePro",
+    "immagine": "https://images.unsplash.com/photo-1509762774605-f07235a08f1f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 59.95,
+    "descrizione": "Zaino capiente e impermeabile per viaggi e trekking.",
+    "id": 11
+  },
+  {
+    "nome": "Tappetino Yoga Antiscivolo",
+    "marca": "FlexMat",
+    "immagine": "https://images.unsplash.com/photo-1591291621164-2c6367723315?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 22.9,
+    "descrizione": "Tappetino da yoga con superficie antiscivolo e confortevole.",
+    "id": 12
+  },
+  {
+    "nome": "Set di Posate in Acciaio Inox",
+    "marca": "SteelTaste",
+    "immagine": "https://images.unsplash.com/photo-1503197553955-b4eafae3e08e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 34.99,
+    "descrizione": "Set elegante di posate in acciaio inox, resistente e lucente.",
+    "id": 13
+  },
+  {
+    "nome": "Bottiglia Termica 500ml",
+    "marca": "HydroLife",
+    "immagine": "https://images.unsplash.com/photo-1695634238039-1e79e4d71576?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 18.0,
+    "descrizione": "Borraccia termica in acciaio inox, mantiene caldo e freddo per ore.",
+    "id": 14
+  },
+  {
+    "nome": "Cuscino Memory Foam",
+    "marca": "DreamWell",
+    "immagine": "https://images.unsplash.com/photo-1629949009710-2df14c41a72e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 44.9,
+    "descrizione": "Cuscino ergonomico in memory foam per un sonno perfetto.",
+    "id": 15
+  },
+  {
+    "nome": "Tenda da Campeggio 2 Posti",
+    "marca": "CampGear",
+    "immagine": "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 89.0,
+    "descrizione": "Tenda leggera e facile da montare per due persone.",
+    "id": 16
+  },
+  {
+    "nome": "Set di Valigie Rigide",
+    "marca": "TravelMax",
+    "immagine": "https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 159.0,
+    "descrizione": "Set di 3 valigie rigide, resistenti e con ruote girevoli.",
+    "id": 17
+  },
+  {
+    "nome": "Macchina da Caff\u00e8 Espresso",
+    "marca": "BrewMaster",
+    "immagine": "https://images.unsplash.com/photo-1637029436347-e33bf98a5412?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 149.9,
+    "descrizione": "Macchina da caff\u00e8 compatta per un espresso perfetto ogni giorno.",
+    "id": 18
+  },
+  {
+    "nome": "Robot Aspirapolvere Smart",
+    "marca": "CleanBot",
+    "immagine": "https://images.unsplash.com/photo-1558317374-067fb5f30001?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "costo": 219.9,
+    "descrizione": "Aspirapolvere robot intelligente con navigazione automatica e app.",
+    "id": 19
+  }
+]

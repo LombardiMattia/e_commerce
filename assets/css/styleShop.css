@@ -1,0 +1,417 @@
+/*font --> Space Grotesk*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+/*font --> Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /*font*/
+  --font-title: "Space Grotesk", sans-serif;
+  --font-text: "Poppins", sans-serif;
+
+  /*colori*/
+  --seasalt: #f8f9faff;
+  --antiflash-white: #e9ecefff;
+  --platinum: #dee2e6ff;
+  --french-gray: #ced4daff;
+  --french-gray-2: #adb5bdff;
+  --slate-gray: #6c757dff;
+  --outer-space: #495057ff;
+  --onyx: #343a40ff;
+  --eerie-black: #212529ff;
+
+  /*misure*/
+  --size-title: 21px;
+  --size-text: 14px;
+
+  /*content*/
+  --before-content: "0";
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--eerie-black);
+  min-height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+/*impostazioni navbar + header*/
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-text);
+  background-color: rgba(245, 245, 245, 0.9);
+  backdrop-filter: blur(90px); /* sfocatura vetro */
+  -webkit-backdrop-filter: blur(10px); /* compatibilità Safari */
+  align-items: center;
+  position: fixed;
+  z-index: 110;
+}
+header #logo {
+  margin-left: 3rem;
+  margin-right: 5rem;
+  font-family: var(--font-title);
+  font-size: 21px;
+  font-weight: 600;
+}
+header a {
+  text-decoration: none;
+  color: var(--eerie-black);
+}
+#navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* AGGIUNTO */
+  padding: 0 2rem; /* FACOLTATIVO per un po' di spazio laterale */
+}
+
+#navbar #navigate {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+#navbar #dx {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 2rem;
+  margin-left: 0; /* RIMOSSO margin-left */
+  align-items: center;
+  align-content: center;
+}
+#navigate li {
+  position: relative;
+}
+
+#navigate li::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: rgb(77, 204, 77);
+  transition: width 0.3s ease-in-out;
+}
+#navigate li:hover::before {
+  width: 100%;
+}
+
+#dx .icona {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 4px;
+  position: relative;
+  top: 0.2rem;
+}
+#dx .icona:hover {
+  cursor: pointer;
+}
+
+/*box notifica carrello*/
+#carrello #advise {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(225, 0, 0);
+  color: var(--seasalt);
+  font-size: 9px;
+  text-align: center;
+  clip-path: circle(6px);
+  position: absolute;
+  left: 1.5rem;
+  top: -0.1rem;
+  display: none; /*di preset*/
+}
+header #logo a:hover {
+  color: rgb(77, 204, 77);
+  transition: color 0.5s ease-in-out;
+}
+header #logo a:not(:hover) {
+  color: var(--eerie-black);
+  transition: color 0.5s ease-in-out;
+}
+
+/*box novità*/
+#box_novita {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../../images/backgroudn1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0rem 0rem;
+  padding: 3rem;
+}
+#box_novita #box-title {
+  color: #fefefe;
+  position: relative;
+  font-size: 80px;
+  font-family: var(--font-title);
+  margin-top: 5rem;
+}
+#box_novita #banner {
+  color: #fefefe;
+  font-family: var(--font-text);
+}
+#box_novita:hover {
+  cursor: default;
+}
+/*prodotti*/
+/*cella*/
+.prodotti {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 2rem; /* Dà più spazio ai prodotti */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(350px, 1fr)
+  ); /* miglior adattamento */
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%; /* Garantisce che i contenuti non escano dal contenitore */
+  overflow-x: hidden; /* Blocca lo scroll orizzontale */
+  margin-top: -10rem;
+  background: linear-gradient(to bottom, #000000, #222222cc);
+}
+
+.product-box {
+  background-color: var(--seasalt);
+  padding: 1.5rem;
+  text-align: center;
+  font-family: var(--font-text);
+  border-radius: 7px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.4s;
+  animation: fadeUp 0.8s ease-in-out;
+}
+.product-box .btn {
+  border: 1px solid var(--platinum);
+  background-color: var(--seasalt);
+  font-size: 13px;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+.product-box .btn:hover {
+  cursor: pointer;
+  background-color: #e1e1e1;
+}
+.product-box:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.product-box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.product-box:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.product-box:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.product-box:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.product-box:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.product-box:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.product-box img {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+}
+
+.product-box h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--font-title);
+}
+
+.product-box .marca {
+  font-weight: 500;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.product-box .descrizione {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.product-box .prezzo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(77, 204, 77);
+}
+
+/*animazione iniziale*/
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*footer */
+#footer {
+  background-color: rgb(0, 0, 0);
+  color: var(--seasalt);
+  font-family: var(--font-text);
+  font-size: 13px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#footer a {
+  text-decoration: none;
+  color: var(--seasalt);
+}
+#footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer ul li {
+  margin-left: 0px;
+}
+#footer .superiore {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.superiore #logo {
+  font-size: 41px;
+  font-family: var(--font-title);
+  font-weight: 450;
+}
+.superiore #descrizione {
+  font-size: 14px;
+}
+.inferiore {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 3rem;
+}
+.inferiore hr {
+  position: relative;
+  border: 0.3px solid var(--outer-space);
+  width: 15rem;
+  margin-left: 0px;
+}
+.inferiore #b2 ul li a:hover {
+  text-decoration: underline;
+}
+.inferiore #b3 ul li a:hover {
+  text-decoration: underline;
+}
+
+.sotto {
+  color: var(--antiflash-white);
+  padding: 1.5rem;
+  background-color: #000000;
+  font-size: 12px;
+  font-family: var(--font-text);
+  text-align: center;
+}
+
+/*media queries*/
+@media (max-width: 1024px) {
+  #footer .superiore {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .superiore #logo {
+    font-size: 32px;
+  }
+
+  .superiore #descrizione {
+    font-size: 13px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .inferiore {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .inferiore hr {
+    width: 10rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #footer {
+    padding: 2rem;
+  }
+
+  .superiore #logo {
+    font-size: 28px;
+  }
+
+  .inferiore {
+    grid-template-columns: 1fr;
+  }
+
+  .inferiore hr {
+    width: 100%;
+  }
+
+  #footer .sotto {
+    font-size: 11px;
+  }
+}
+
+/*notifica versione*/
+#logo #version {
+  font-size: 15px;
+  position: absolute;
+  left: 6.3rem;
+  background-color: rgb(77, 204, 77);
+  color: #fefefe;
+  padding: 0;
+  transform: rotate(-6deg);
+  top: 14px;
+  z-index: 110;
+  padding: 0.1rem;
+  animation: pop 0.6s ease-in-out infinite;
+}
+/*animazione*/
+@keyframes pop {
+  0%,
+  100% {
+    transform: rotate(-6deg) scale(1);
+  }
+  50% {
+    transform: rotate(-6deg) scale(1.15);
+  }
+}
